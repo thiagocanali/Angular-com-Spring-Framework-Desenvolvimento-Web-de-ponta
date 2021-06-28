@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-menu',
+  selector: 'menu',
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
@@ -11,7 +11,11 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
+    this.texto = "Olá mundo, tudo bem?"
   } 
 
+  clickou() {
+    this.texto = "Clickou"
+  }
+  
 }
